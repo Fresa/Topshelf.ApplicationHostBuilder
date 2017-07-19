@@ -4,6 +4,12 @@ Extension for <a href="http://topshelf-project.com" target="_blank">Topshelf</a>
 ## Why?
 Topshelf requires that you create a project with output type Console Application. This extension removes that requirement. You can use any output type. You can even host your application during unit testing!
 
+## Download
+https://www.nuget.org/packages/Topshelf.ApplicationHostBuilder/
+
+## Release Notes
+**1.0.1** Incorrect logger for ApplicationHost
+
 ## Usage
 Use the extension method `UseApplicationHostBuilder` for the host configurator you'll get by initializing the Topshelf `HostFactory`.
 
