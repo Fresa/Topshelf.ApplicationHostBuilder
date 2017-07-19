@@ -1,7 +1,6 @@
 using System;
 using System.Diagnostics;
 using Microsoft.Win32;
-using Topshelf.Hosts;
 using Topshelf.Logging;
 using Topshelf.Runtime;
 
@@ -9,7 +8,7 @@ namespace Topshelf.ApplicationHostBuilder
 {
     public class ApplicationHost : Host, HostControl
     {
-        private readonly LogWriter _log = HostLogger.Get<ConsoleRunHost>();
+        private readonly LogWriter _log = HostLogger.Get<ApplicationHost>();
         private readonly ServiceHandle _serviceHandle;
         private readonly HostSettings _settings;
         private TopshelfExitCode _exitCode;
