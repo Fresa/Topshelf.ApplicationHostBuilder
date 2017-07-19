@@ -1,0 +1,7 @@
+src/Topshelf.ApplicationHostBuilder/obj/
+src/Topshelf.ApplicationHostBuilder/bin/
+tests/Topshelf.ApplicationHostBuilder.Tests/obj/
+tests/Topshelf.ApplicationHostBuilder.Tests/bin/
+packages/
+!tools/**
+*.nupkg
