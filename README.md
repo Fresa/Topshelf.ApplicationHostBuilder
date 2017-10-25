@@ -34,10 +34,10 @@ There are some minor caveats.
 When using ReSharper's test runner, it will add some arguments when bootstrapping the test assembly. Topshelf parses input arguments by getting them from `Environment.GetCommandLineArgs()`. It will pick up the arguments from ReSharpers test runner and fail creating the hosting environment. Fortunately they provide a function to override the command line. Use the `ApplyCommandLine` function on the host configurator supplied by the `HostFactory` to simulate the behaviour you are testing.
 
 ### Console Usage
-The `HelpHost` and the `TopshelfConsoleTraceListener` within Topshelf uses `Console`'s write functions directly, which will not make any sense if you do not have an application that listens to `Console`'s output. Fortunately `Console` exposes a function (`SetOut`) making it possible to redirect text being writter to `Console` by rolling your own `TextWriter`.
+The `HelpHost` and the `TopshelfConsoleTraceListener` within Topshelf uses `Console`'s write functions directly, which will not make any sense if you do not have an application that listens to `Console`'s output. Fortunately `Console` exposes a function (`SetOut`) making it possible to redirect text being written to `Console` by rolling your own `TextWriter`.
 
 ### Stopping the Application
 - When installing the application as a Windows Service, it works just as described in Topshelf's documentation.
 - When running it through an automated test, you probably want to use the host controller provided by Topshelf after the hosting has started. See `WhenStarted` function for `ServiceConfigurator<T>`.
-- When running it from a console/file explorer you need to kill the application from the Task Manager. For know, there is no way to do a graceful stop.
-- When debugging from Visual Studio, just hit Stop Debugging. For know, there is no way to do a graceful stop.
+- When running it from a console/file explorer you need to kill the application from the Task Manager. For now, there is no way to do a graceful stop.
+- When debugging from Visual Studio, just hit Stop Debugging. For now, there is no way to do a graceful stop.
