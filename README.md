@@ -1,6 +1,10 @@
 # Topshelf.ApplicationHostBuilder
 Extension for <a href="http://topshelf-project.com" target="_blank">Topshelf</a> to be able to use any type of application, not just a Console Application.
 
+[![Build status](https://ci.appveyor.com/api/projects/status/awg7k2k7vw0k1qc0?svg=true)](https://ci.appveyor.com/project/Fresa/topshelf-applicationhostbuilder)
+
+[![Build history](https://buildstats.info/appveyor/chart/Fresa/topshelf-applicationhostbuilder)](https://ci.appveyor.com/project/Fresa/topshelf-applicationhostbuilder/history)
+
 ## Why?
 Topshelf requires that you create a project with output type Console Application. This extension removes that requirement. You can use any output type. You can even host your application during unit testing!
 
