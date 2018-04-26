@@ -21,9 +21,6 @@
         <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
     </ItemGroup>
   <ItemGroup>
-    <Analyzer Include="..\..\..\packages\xunit.analyzers.0.7.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\..\Topshelf.ApplicationHostBuilder\Topshelf.ApplicationHostBuilder.csproj" />
   </ItemGroup>
 </Project>
