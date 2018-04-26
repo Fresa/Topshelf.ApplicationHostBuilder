@@ -72,7 +72,12 @@ namespace Topshelf.ApplicationHostBuilder
 
         void HostControl.Stop()
         {
-            _log.Info("Application Stop requested, exiting.");
+            ((HostControl)this).Stop(TopshelfExitCode.Ok);
+        }
+
+        void HostControl.Stop(TopshelfExitCode exitCode)
+        {
+            _log.Info($"Application Stop requested, exiting with exit code: {exitCode}.");
             StopService();
             HostLogger.Shutdown();
         }
