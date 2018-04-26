@@ -14,7 +14,7 @@
     <copyright>Copyright 2017 $author$</copyright>
     <tags>Topshelf Application Host Builder</tags>
     <dependencies>
-      <dependency id="Topshelf" version="4.0.0" />
+      <dependency id="Topshelf" version="4.0.4" />
     </dependencies>
   </metadata>
   <files>
