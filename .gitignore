@@ -5,3 +5,7 @@ tests/Topshelf.ApplicationHostBuilder.Tests/bin/
 packages/
 !tools/**
 *.nupkg
+Topshelf.ApplicationHostBuilder.v3.ncrunchsolution
+.vs/
+src/Tests/Topshelf.ApplicationHostBuilder.Integration.Tests/bin/
+src/Tests/Topshelf.ApplicationHostBuilder.Integration.Tests/obj/

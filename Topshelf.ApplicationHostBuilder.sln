@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topshelf.ApplicationHostBuilder", "src\Topshelf.ApplicationHostBuilder\Topshelf.ApplicationHostBuilder.csproj", "{5FEC3ED8-CA75-4527-AEBD-6C3D4B3FB273}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5EAF414C-90B7-4FD0-944C-C76C8F6E74C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topshelf.ApplicationHostBuilder.Integration.Tests", "src\Tests\Topshelf.ApplicationHostBuilder.Integration.Tests\Topshelf.ApplicationHostBuilder.Integration.Tests.csproj", "{97C9EB46-219B-467D-8C32-B2F4D097B333}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +19,18 @@ Global
 		{5FEC3ED8-CA75-4527-AEBD-6C3D4B3FB273}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FEC3ED8-CA75-4527-AEBD-6C3D4B3FB273}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FEC3ED8-CA75-4527-AEBD-6C3D4B3FB273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97C9EB46-219B-467D-8C32-B2F4D097B333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97C9EB46-219B-467D-8C32-B2F4D097B333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97C9EB46-219B-467D-8C32-B2F4D097B333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97C9EB46-219B-467D-8C32-B2F4D097B333}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{97C9EB46-219B-467D-8C32-B2F4D097B333} = {5EAF414C-90B7-4FD0-944C-C76C8F6E74C4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4274DE2-1B65-4E49-87E2-A1947FE484FD}
 	EndGlobalSection
 EndGlobal
