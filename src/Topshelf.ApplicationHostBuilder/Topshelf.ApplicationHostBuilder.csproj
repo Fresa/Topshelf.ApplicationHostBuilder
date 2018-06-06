@@ -13,6 +13,9 @@
         <PackageTags>Topshelf Application Host Builder</PackageTags>
         <PackageLicenseUrl>https://github.com/Fresa/Topshelf.ApplicationHostBuilder/blob/master/LICENSE</PackageLicenseUrl>
         <PackageReleaseNotes />
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+        <IncludeSource>True</IncludeSource>
+        <IncludeSymbols>True</IncludeSymbols>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Topshelf" version="4.0.4" />
