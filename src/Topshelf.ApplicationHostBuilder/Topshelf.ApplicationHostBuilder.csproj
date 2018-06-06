@@ -4,12 +4,15 @@
         <TargetFramework>net452</TargetFramework>
         <Authors>Fredrik Arvidsson</Authors>
         <Company>FKAN Consulting AB</Company>
-        <Copyright>Copyright ©  2017</Copyright>
+        <Copyright>Copyright © 2017 Fredrik Arvidsson</Copyright>
         <Description>Extension for Topshelf to be able to host any type of application, not just a Console Application.</Description>
         <Version>1.0.0</Version>
         <PackageVersion></PackageVersion>
         <RepositoryUrl>https://github.com/Fresa/Topshelf.ApplicationHostBuilder</RepositoryUrl>
         <RepositoryType />
+        <PackageTags>Topshelf Application Host Builder</PackageTags>
+        <PackageLicenseUrl>https://github.com/Fresa/Topshelf.ApplicationHostBuilder/blob/master/LICENSE</PackageLicenseUrl>
+        <PackageReleaseNotes />
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Topshelf" version="4.0.4" />
