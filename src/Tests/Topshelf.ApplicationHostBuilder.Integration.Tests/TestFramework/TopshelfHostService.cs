@@ -19,24 +19,22 @@ namespace Topshelf.ApplicationHostBuilder.Integration.Tests.TestFramework
         {
             var startCode = (int)HostFactory.Run(config =>
             {
-                config.ApplyCommandLine("");
-                config.UseApplicationHostBuilder();
-                config.OnException(exception => OnUnhandledException?.Invoke(exception));
-
-                config.Service<TService>(settings =>
+                using (config.UseApplicationHostBuilder(args))
                 {
-                    settings.ConstructUsing(hostSettings => _service);
-                    settings.WhenStarted((service, control) =>
+                    config.OnException(exception => OnUnhandledException?.Invoke(exception));
+
+                    config.Service<TService>(settings =>
                     {
-                        _control = control;
-                        var code = service.Start();
-                        return code == 0;
+                        settings.ConstructUsing(hostSettings => _service);
+                        settings.WhenStarted((service, control) =>
+                        {
+                            _control = control;
+                            var code = service.Start();
+                            return code == 0;
+                        });
+                        settings.WhenStopped(service => { service.Stop(); });
                     });
-                    settings.WhenStopped(service =>
-                    {
-                        service.Stop();
-                    });
-                });
+                }
             });
             return startCode;
         }
