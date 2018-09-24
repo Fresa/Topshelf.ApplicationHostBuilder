@@ -18,6 +18,7 @@ https://www.nuget.org/packages/Topshelf.ApplicationHostBuilder/
 Use the extension method `UseApplicationHostBuilder` for the host configurator you'll get by initializing the Topshelf `HostFactory`.
 
 ## Example
+Without command line arguments.
 ```
 HostFactory.Run(config =>
 {
@@ -28,6 +29,20 @@ HostFactory.Run(config =>
         configurator.WhenStarted((service, control) => service.Start());
         configurator.WhenStopped(service => service.Stop());
     });
+});
+```
+With command line arguments.
+```
+HostFactory.Run(config =>
+{
+    using(config.UseApplicationHostBuilder(args))
+    {
+        config.Service<MyService>(configurator =>
+        {
+            configurator.WhenStarted((service, control) => service.Start());
+            configurator.WhenStopped(service => service.Stop());
+        });
+    }
 });
 ```
 
