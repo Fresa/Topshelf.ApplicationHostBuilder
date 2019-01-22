@@ -82,12 +82,6 @@ namespace Topshelf.ApplicationHostBuilder
             HostLogger.Shutdown();
         }
 
-        void HostControl.Restart()
-        {
-            _log.Info("Application Restart requested, but we don't support that here, so we are exiting.");
-            ((HostControl)this).Stop();
-        }
-
         private void StopService()
         {
             try
