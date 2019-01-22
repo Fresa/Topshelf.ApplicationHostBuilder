@@ -18,6 +18,6 @@
         <IncludeSymbols>True</IncludeSymbols>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Topshelf" version="4.0.4" />
+        <PackageReference Include="Topshelf" version="4.2.0" />
     </ItemGroup>
 </Project>

@@ -7,7 +7,7 @@
         <Copyright>Copyright ©  2017</Copyright>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Topshelf" version="4.0.4" />
+        <PackageReference Include="Topshelf" version="4.2.0" />
         <PackageReference Include="Owin" version="1.0" />
         <PackageReference Include="Microsoft.Owin" version="3.1.0" />
         <PackageReference Include="Shouldly" version="3.0.0" />
